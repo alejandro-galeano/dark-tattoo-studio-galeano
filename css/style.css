@@ -10,78 +10,39 @@ body {
 a {
     text-decoration: none;
     color: #d4d4d4;
+    letter-spacing: 5px;
 }
 /* fin de configuraciones generales */
 
 /* HEADER */
-#header {
-    width: 100%;
-    position: fixed;
-    z-index: 1000;
-}
 
-.header-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    background-color: #2b2b2b;
-}
-
-.header-container a p {
-    margin: 0;
-}
-
-.logo {
+.navbar-brand {
     font-size: 2rem;
-    display: none;
 }
-
-#header a {
-    font-family: 'Abril Fatface', cursive;
+.header a {
     font-weight: bold;
-    padding: 0rem 1rem;
-}
-.navbar {
-    display: flex;
-    height: 54px;
-    margin: 0 1rem;
-}
-.navbar ul{
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar ul li {
-    display: flex;
-    justify-content: center;
-}
-
-.navbar  ul li a:hover{   
-    color: #aaaaaa;
-    border-top: 1px solid #d4d4d4;
-    border-bottom: 1px solid #d4d4d4;
-}
-
-@media screen and (min-width:576px) {
+    font-family: 'Abril Fatface', cursive;
     
-    a {
-        letter-spacing: 3px;
-    }
-    
-    .logo {
-        display: block; 
+}
+
+.navbar-nav li :hover {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    transform: scale(1.2);
+    transition: all 1s; 
+}
+
+
+    /* media queries */
+@media screen and (max-width: 576px) {
+    .navbar-brand {
+        display: none;
     }
 }
 /* fin del header */
 
 /* inicio de carousel */
 
-.carrusel {
-    padding-top: 54px;
-}
+
 
 
